@@ -1,0 +1,60 @@
+body {
+	margin: 0 auto;
+	max-width: 50em;
+	background: #dbdbdb;
+}
+
+body {
+	font-family: "Helvetica", "Arial", sans-serif;
+	line-height: 1.5;
+	padding: 4em 1em;
+}
+
+h2 {
+	margin-top: 1em;
+	padding-top: 1em;
+}
+
+/* lessen the saturation of dark text */
+h1,
+h2,
+strong {
+	color: #333;
+}
+
+body {
+	color: #555;
+}
+
+
+/* box around paragraphs */
+.box,
+p {
+	background: #c5c5c5;
+}
+
+.box {
+	padding: 2px 4px;
+	vertical-align: text-bottom;
+}
+
+p {
+	padding: 1em;
+}
+
+/* header styling */
+header {
+  background-color: black;
+  /*background-image: url("header.jpg");*/
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6em 2em;
+  text-align: center;
+}
+
+header h1 {
+	color: white;
+	font-size: 3 em;
+	font-weight: 500;
+}
