@@ -37,7 +37,7 @@ body {
 
 /* box around paragraphs */
 .box,
-p {
+p, h3 {
 	background: #eee;
 	margin: 1em;
 }
@@ -123,30 +123,3 @@ header #software-engineer {
 		0px 0px 0 #000,
 		0px 0px 0 #000;
 }
-
-
-/* make opacity drop when hovering header */
-#name {
-	/*opacity: 1;
-	transition: 0.5s ease;
-	transition-property: opacity, display;
-	backface-visibility: hidden;*/
-}
-
-header #buttons, header #software-engineer {
-	/*transition: 300ms ease;
-	opacity: 0;*/
-	
-}
-
-header:hover #name {/*
-	opacity: 0; */
-}
-
-header:hover #buttons, header:hover #software-engineer {
-	/*opacity: 1;
-    height: auto;*/
-}
-
-
-
