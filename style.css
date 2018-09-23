@@ -27,15 +27,10 @@ main h2 {
 
 
 /* font colors */
-#blue {
-	color: #224d91;
-}
-#red {
-	color: #950000;
-}
+
 h1,
 h2 {
-	color: #333;
+	color: #710000;
 }
 body {
 	color: #555;
@@ -51,7 +46,7 @@ h3 {
 
 .box,
 p, h3, h4 {
-	background: #eee;
+	background: #ffe3e3;
 	margin: 1em;
 }
 
