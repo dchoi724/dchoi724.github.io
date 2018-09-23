@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:600');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 /* overwrite default margin for banner */
 body {
@@ -13,7 +14,7 @@ main {
 }
 
 body {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 }
@@ -21,12 +22,13 @@ body {
 main h2 {
 	margin: 1em 1em;
 	padding-top: 1em;
+	font-size: 2em;
 }
 
-/* lessen the saturation of dark text */
+
+/* lighter font color */
 h1,
-h2,
-strong {
+h2 {
 	color: #333;
 }
 
@@ -34,10 +36,12 @@ body {
 	color: #555;
 }
 
-
 /* box around paragraphs */
+h3 {
+  font-size: 1em;
+}
 .box,
-p, h3 {
+p, h3, h4 {
 	background: #eee;
 	margin: 1em;
 }
@@ -48,6 +52,10 @@ p, h3 {
 	border-radius: 20px;
 }
 
+.box ul {
+	margin-top: 0px;
+}
+
 p {
 	padding: 2px;
 }
@@ -56,6 +64,7 @@ p {
 /* header styling */
 header {
 	/*background-color: black;*/
+	font-family: 'Nunito', sans-serif;
 	background-image: url("img/banner.jpg");
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -65,10 +74,10 @@ header {
 	padding: 10vw 2em 1vw;
 	text-align: center;
 	position: relative;
-	/*height: 20em;*/
 	overflow: hidden;
 }
 
+/* header name styling */
 header h1 {
 	color: white;
 	font-size: 3em;
@@ -83,34 +92,50 @@ header h1 {
 		0px 0px 0 #000;
 	margin: 0px;
 }
-/* Button around h1 */
-header .nameplate {
- /*border: 1px solid rgb(255, 226, 226);*/
-  border-radius: 290486px;
-  transition: none 0.5s ease-out;
-  transition-property: color, background-color;
-  background-color: rgba(255, 226, 226, 0.6);
-  color: white;
-}
 
+/* button drop shadows*/
 #buttons {
 	-webkit-filter: 
 		drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.75))
 		drop-shadow(1px 1px 0 rgba(0, 0, 0, 0.5))
         drop-shadow(-1px -1px 0 rgba(0, 0, 0, 0.5));
+        opacity(1);
 	filter: 
 		drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.75))
 		drop-shadow(1px 1px 0 rgba(0, 0, 0, 0.5)) 
       	drop-shadow(-1px -1px 0 rgba(0, 0, 0 0.5));
-}
-#buttons img {
-	margin-right: 0.5em;
-	margin-left: 0.5em;
-	margin-top: 0.5em;
-	width: 32px;
-	height: 32px;
+      	opacity(1);
 }
 
+/* button images */
+#linkedin {
+	background: url("img/buttons/linkedin.png") no-repeat;	
+}
+#github {
+	background: url("img/buttons/github.png") no-repeat;
+}
+/* button sizing */
+#linkedin, #github {
+	display: inline-block;
+ 	width: 32px;
+ 	height: 32px;
+	background-size: 100%;
+	margin-right: 0.25em;
+	margin-left: 0.25em;
+	margin-top: 0.5em;
+}
+
+/* darken the buttons when you hover */
+#linkedin, #github {
+	opacity: 1;
+	transition-property: opacity;
+    transition-duration: 0.3s;
+}
+#linkedin:hover, #github:hover {
+	opacity: 0.8;
+}
+
+/* stroke + color on subheading */
 header #software-engineer {
 	font-size: 2em;
 	color: #e8e8e8;
@@ -122,4 +147,12 @@ header #software-engineer {
 		0px 0px 0 #000,
 		0px 0px 0 #000,
 		0px 0px 0 #000;
+}
+
+/* blue font GDMS */
+#blue {
+	color: #224d91;
+}
+#black {
+	color: #950000;
 }
